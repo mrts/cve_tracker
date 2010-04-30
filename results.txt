@@ -1,0 +1,369 @@
+===
+CVE-2009-4081 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+Untrusted search path vulnerability in dstat before r3199 allows local
+users to gain privileges via a Trojan horse Python module in the
+current working directory, a different vulnerability than
+CVE-2009-3894.
+
+
+===
+CVE-2009-3894 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+Multiple untrusted search path vulnerabilities in dstat before 0.7.0
+allow local users to gain privileges via a Trojan horse Python module
+in (1) the current working directory or (2) a certain subdirectory of
+the current working directory.
+
+
+===
+CVE-2009-3720 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+The updatePosition function in lib/xmltok_impl.c in libexpat in Expat
+2.0.1, as used in Python, PyXML, w3c-libwww, and other software,
+allows context-dependent attackers to cause a denial of service
+(application crash) via an XML document with crafted UTF-8 sequences
+that trigger a buffer over-read, a different vulnerability than
+CVE-2009-2625.
+
+
+===
+CVE-2009-0318 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the GObject Python interpreter
+wrapper in Gnumeric allows local users to execute arbitrary code via a
+Trojan horse Python file in the current working directory, related to
+a vulnerability in the PySys_SetArgv function (CVE-2008-5983).
+
+
+===
+CVE-2009-0317 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the Python language bindings
+for Nautilus (nautilus-python) allows local users to execute arbitrary
+code via a Trojan horse Python file in the current working directory,
+related to a vulnerability in the PySys_SetArgv function
+(CVE-2008-5983).
+
+
+===
+CVE-2009-0316 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in src/if_python.c in the Python
+interface in Vim before 7.2.045 allows local users to execute
+arbitrary code via a Trojan horse Python file in the current working
+directory, related to a vulnerability in the PySys_SetArgv function
+(CVE-2008-5983), as demonstrated by an erroneous search path for
+plugin/bike.vim in bicyclerepair.
+
+
+===
+CVE-2009-0315 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the Python module in xchat
+allows local users to execute arbitrary code via a Trojan horse Python
+file in the current working directory, related to a vulnerability in
+the PySys_SetArgv function (CVE-2008-5983).
+
+
+===
+CVE-2009-0314 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the Python module in gedit
+allows local users to execute arbitrary code via a Trojan horse Python
+file in the current working directory, related to a vulnerability in
+the PySys_SetArgv function (CVE-2008-5983).
+
+
+===
+CVE-2008-5987 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the Python interface in Eye of
+GNOME (eog) 2.22.3, and possibly other versions, allows local users to
+execute arbitrary code via a Trojan horse Python file in the current
+working directory, related to a vulnerability in the PySys_SetArgv
+function (CVE-2008-5983).
+
+
+===
+CVE-2008-5986 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the (1) "VST plugin with Python
+scripting" and (2) "VST plugin for writing score generators in Python"
+in Csound 5.08.2, and possibly other versions, allows local users to
+execute arbitrary code via a Trojan horse Python file in the current
+working directory, related to a vulnerability in the PySys_SetArgv
+function (CVE-2008-5983).
+
+
+===
+CVE-2008-5985 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the Python interface in
+Epiphany 2.22.3, and possibly other versions, allows local users to
+execute arbitrary code via a Trojan horse Python file in the current
+working directory, related to a vulnerability in the PySys_SetArgv
+function (CVE-2008-5983).
+
+
+===
+CVE-2008-5984 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the Python plugin in Dia
+0.96.1, and possibly other versions, allows local users to execute
+arbitrary code via a Trojan horse Python file in the current working
+directory, related to a vulnerability in the PySys_SetArgv function
+(CVE-2008-5983).
+
+
+===
+CVE-2008-5983 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['5753']
+---
+Untrusted search path vulnerability in the PySys_SetArgv API function
+in Python 2.6 and earlier, and possibly later versions, prepends an
+empty string to sys.path when the argv[0] argument does not contain a
+path separator, which might allow local users to execute arbitrary
+code via a Trojan horse Python file in the current working directory.
+
+
+===
+CVE-2008-5031 WARN: only svn.python.org SVN revisions ['61350', '61350', '61350'] listed in CVE
+	but it is referred to in bugs.python.org issues ['4469']
+---
+Multiple integer overflows in Python 2.2.3 through 2.5.1, and 2.6,
+allow context-dependent attackers to have an unknown impact via a
+large integer value in the tabsize argument to the expandtabs method,
+as implemented by (1) the string_expandtabs function in
+Objects/stringobject.c and (2) the unicode_expandtabs function in
+Objects/unicodeobject.c.  NOTE: this vulnerability reportedly exists
+because of an incomplete fix for CVE-2008-2315.
+
+
+===
+CVE-2008-4864 WARN: only svn.python.org SVN revisions ['66689', '66689'] listed in CVE
+---
+Multiple integer overflows in imageop.c in the imageop module in
+Python 1.5.2 through 2.5.1 allow context-dependent attackers to break
+out of the Python VM and execute arbitrary code via large integer
+values in certain arguments to the crop function, leading to a buffer
+overflow, a different vulnerability than CVE-2007-4965 and
+CVE-2008-1679.
+
+
+===
+CVE-2008-4108 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+Tools/faqwiz/move-faqwiz.sh (aka the generic FAQ wizard moving tool)
+in Python 2.4.5 might allow local users to overwrite arbitrary files
+via a symlink attack on a tmp$RANDOM.tmp temporary file.  NOTE: there
+may not be common usage scenarios in which tmp$RANDOM.tmp is located
+in an untrusted directory.
+
+
+===
+CVE-2008-3144 OK: bugs.python.org issues ['2588', '2589'] listed in CVE
+---
+Multiple integer overflows in the PyOS_vsnprintf function in
+Python/mysnprintf.c in Python 2.5.2 and earlier allow
+context-dependent attackers to cause a denial of service (memory
+corruption) or have unspecified other impact via crafted input to
+string formatting operations.  NOTE: the handling of certain integer
+values is also affected by related integer underflows and an
+off-by-one error.
+
+
+===
+CVE-2008-3143 WARN: only svn.python.org SVN revisions ['60793'] listed in CVE
+---
+Multiple integer overflows in Python before 2.5.2 might allow
+context-dependent attackers to have an unknown impact via vectors
+related to (1) Include/pymem.h; (2) _csv.c, (3) _struct.c, (4)
+arraymodule.c, (5) audioop.c, (6) binascii.c, (7) cPickle.c, (8)
+cStringIO.c, (9) cjkcodecs/multibytecodec.c, (10) datetimemodule.c,
+(11) md5.c, (12) rgbimgmodule.c, and (13) stropmodule.c in Modules/;
+(14) bufferobject.c, (15) listobject.c, and (16) obmalloc.c in
+Objects/; (17) Parser/node.c; and (18) asdl.c, (19) ast.c, (20)
+bltinmodule.c, and (21) compile.c in Python/, as addressed by "checks
+for integer overflows, contributed by Google."
+
+
+===
+CVE-2008-3142 OK: bugs.python.org issues ['2620'] listed in CVE
+---
+Multiple buffer overflows in Python 2.5.2 and earlier on 32bit
+platforms allow context-dependent attackers to cause a denial of
+service (crash) or have unspecified other impact via a long string
+that leads to incorrect memory allocation during Unicode string
+processing, related to the unicode_resize function and the
+PyMem_RESIZE macro.
+
+
+===
+CVE-2008-2316 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['3886']
+---
+Integer overflow in _hashopenssl.c in the hashlib module in Python
+2.5.2 and earlier might allow context-dependent attackers to defeat
+cryptographic digests, related to "partial hashlib hashing of data
+exceeding 4GB."
+
+
+===
+CVE-2008-2315 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['4230']
+---
+Multiple integer overflows in Python 2.5.2 and earlier allow
+context-dependent attackers to have an unknown impact via vectors
+related to the (1) stringobject, (2) unicodeobject, (3) bufferobject,
+(4) longobject, (5) tupleobject, (6) stropmodule, (7) gcmodule, and
+(8) mmapmodule modules.  NOTE: The expandtabs integer overflows in
+stringobject and unicodeobject in 2.5.2 are covered by CVE-2008-5031.
+
+
+===
+CVE-2008-1887 OK: bugs.python.org issues ['2587'] listed in CVE
+---
+Python 2.5.2 and earlier allows context-dependent attackers to execute
+arbitrary code via multiple vectors that cause a negative size value
+to be provided to the PyString_FromStringAndSize function, which
+allocates less memory than expected when assert() is disabled and
+triggers a buffer overflow.
+
+
+===
+CVE-2008-1721 OK: bugs.python.org issues ['2586'] listed in CVE
+---
+Integer signedness error in the zlib extension module in Python 2.5.2
+and earlier allows remote attackers to execute arbitrary code via a
+negative signed integer, which triggers insufficient memory allocation
+and a buffer overflow.
+
+
+===
+CVE-2008-1679 OK: bugs.python.org issues ['1179'] listed in CVE
+---
+Multiple integer overflows in imageop.c in Python before 2.5.3 allow
+context-dependent attackers to cause a denial of service (crash) and
+possibly execute arbitrary code via crafted images that trigger
+heap-based buffer overflows.  NOTE: this issue is due to an incomplete
+fix for CVE-2007-4965.
+
+
+===
+CVE-2007-4965 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['1179']
+---
+Multiple integer overflows in the imageop module in Python 2.5.1 and
+earlier allow context-dependent attackers to cause a denial of service
+(application crash) and possibly obtain sensitive information (memory
+contents) via crafted arguments to (1) the tovideo method, and
+unspecified other vectors related to (2) imageop.c, (3)
+rbgimgmodule.c, and other files, which trigger heap-based buffer
+overflows.
+
+
+===
+CVE-2007-4559 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+Directory traversal vulnerability in the (1) extract and (2)
+extractall functions in the tarfile module in Python allows
+user-assisted remote attackers to overwrite arbitrary files via a ..
+(dot dot) sequence in filenames in a TAR archive, a related issue to
+CVE-2001-1267.
+
+
+===
+CVE-2007-2052 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+Off-by-one error in the PyLocale_strxfrm function in
+Modules/_localemodule.c for Python 2.4 and 2.5 causes an incorrect
+buffer size to be used for the strxfrm function, which allows
+context-dependent attackers to read portions of memory via unknown
+manipulations that trigger a buffer over-read due to missing null
+termination.
+
+
+===
+CVE-2007-1657 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+Stack-based buffer overflow in the file_compress function in minigzip
+(Modules/zlib) in Python 2.5 allows context-dependent attackers to
+execute arbitrary code via a long file argument.
+
+
+===
+CVE-2006-4980 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['1541585']
+---
+Buffer overflow in the repr function in Python 2.3 through 2.6 before
+20060822 allows context-dependent attackers to cause a denial of
+service and possibly execute arbitrary code via crafted wide character
+UTF-32/UCS-4 strings to certain scripts.
+
+
+===
+CVE-2006-1542 WARN: no references to issues or SVN in CVE
+	but it is referred to in bugs.python.org issues ['1298813']
+---
+Stack-based buffer overflow in Python 2.4.2 and earlier, running on
+Linux 2.6.12.5 under gcc 4.0.3 with libc 2.3.5, allows local users to
+cause a "stack overflow," and possibly gain privileges, by running a
+script from a current working directory that has a long name, related
+to the realpath function.  NOTE: this might not be a vulnerability.
+However, the fact that it appears in a programming language
+interpreter could mean that some applications are affected, although
+attack scenarios might be limited because the attacker might already
+need to cross privilege boundaries to cause an exploitable program to
+be placed in a directory with a long name; or, depending on the method
+that Python uses to determine the current working directory, setuid
+applications might be affected.
+
+
+===
+CVE-2005-0089 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+The SimpleXMLRPCServer library module in Python 2.2, 2.3 before 2.3.5,
+and 2.4, when used by XML-RPC servers that use the register_instance
+method to register an object without a _dispatch method, allows remote
+attackers to read or modify globals of the associated module, and
+possibly execute arbitrary code, via dotted attributes.
+
+
+===
+CVE-2004-0150 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+Buffer overflow in the getaddrinfo function in Python 2.2 before
+2.2.2, when IPv6 support is disabled, allows remote attackers to
+execute arbitrary code via an IPv6 address that is obtained using DNS.
+
+
+===
+CVE-2002-1119 ERROR: no references to python.org issues or SVN in CVE
+	nor do any bugs.python.org issues refer to it
+---
+os._execvpe from os.py in Python 2.2.1 and earlier creates temporary
+files with predictable names, which could allow local users to execute
+arbitrary code via a symlink attack.
+
+
+--------------------------------------------------
+There were 10 errors, 18 warnings and 5 CVEs were OK.

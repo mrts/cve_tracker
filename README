@@ -1,0 +1,22 @@
+A script that parses the Python-related CVE list
+
+http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=python
+
+and classifies the CVEs as follows:
+
+ * "ok" -- CVE has references to bugs.python.org,
+
+ * "warnings" -- CVE has references to Python SVN revisions
+   or an issue in bugs.python.org refers to it (i.e. the probelm is
+   probably fixed, but the CVE should really be updated to link
+   to the issue that is probably listed in bugs.python.org),
+
+ * "errors" -- CVE does have no references to Python issues or SVN
+   nor does any issue in bugs.python.org have references to the CVE ID.
+
+In April 2010 there were 10 errors, 18 warnings and 5 CVEs were OK.
+
+In an ideal world, the references would be symmetric, i.e. every
+Python-related CVE would have references to one or more issues in
+bugs.python.org and these issues would also refer back to the CVE ID.
+
