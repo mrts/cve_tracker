@@ -6,10 +6,7 @@ Checks for:
     * CVE -> Python: CVE refers to either bugs.python.org or svn.python.org
     * Python -> CVE: bugs.python.org refers to CVE
 
-copyleft
-By Mart Somermaa, mrts at mrts dot pri dot ee, usage under Python licence.
-
-
+Copyleft Mart Somermaa, mrts dot pydev at gmail dot com, usage under the Python licence.
 """
 from lxml import html
 from lxml.etree import XPath
